@@ -1,0 +1,22 @@
+Datatyper
+
+C# är ett hårt typat programmeringsspråk
+
+det betyger att vi bland annat måste bestämma vilken datatyp
+som vår variabel ska innehålla.
+
+lista på datatyper
+https://www.w3schools.com/cs/cs_data_types.php
+
+KOM IHÅG
+Breakpoints är din bästa kompis! BFF
+
+NULL
+Om en variabel inte har fått något värde som kommer den att
+vara NULL.
+
+Null är samma sak om vakuum. 
+"det som finns bortom universums slut"
+
+En variabel kan under hela tiden programmet körs få nya värden. 
+Då försvinner det gamla

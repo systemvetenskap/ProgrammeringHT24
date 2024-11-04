@@ -1,0 +1,14 @@
+﻿<Window x:Class="Dubbelknapparna.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dubbelknapparna"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnFirst" Content="Oklickad" FontSize="25" HorizontalAlignment="Left" Margin="93,112,0,0" VerticalAlignment="Top" Height="100" Width="170" Click="btnFirst_Click"/>
+        <Button x:Name="btnSecond" Content="Oklickad" FontSize="25"  HorizontalAlignment="Left" Margin="375,118,0,0" VerticalAlignment="Top" Height="94" Width="176" Click="btnSecond_Click"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FL1", "FL1\FL1.csproj", "{7DB0796D-BEE1-462A-B3FD-E701D70A3F30}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{74FF66F7-5D44-4EAD-AD15-A43117A19B1D}"
+	ProjectSection(SolutionItems) = preProject
+		anteckningar.txt = anteckningar.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dubbelknapparna", "Dubbelknapparna\Dubbelknapparna.csproj", "{A3579C4D-B5E8-4B4D-92C9-ECFCD609720F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DB0796D-BEE1-462A-B3FD-E701D70A3F30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DB0796D-BEE1-462A-B3FD-E701D70A3F30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DB0796D-BEE1-462A-B3FD-E701D70A3F30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DB0796D-BEE1-462A-B3FD-E701D70A3F30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3579C4D-B5E8-4B4D-92C9-ECFCD609720F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3579C4D-B5E8-4B4D-92C9-ECFCD609720F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3579C4D-B5E8-4B4D-92C9-ECFCD609720F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3579C4D-B5E8-4B4D-92C9-ECFCD609720F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0CFE688-8C58-493E-AFAE-72927F09D1EB}
+	EndGlobalSection
+EndGlobal
