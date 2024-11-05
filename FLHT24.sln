@@ -3,14 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FL1", "FL1\FL1.csproj", "{7DB0796D-BEE1-462A-B3FD-E701D70A3F30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FL1", "FL1\FL1.csproj", "{7DB0796D-BEE1-462A-B3FD-E701D70A3F30}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{74FF66F7-5D44-4EAD-AD15-A43117A19B1D}"
 	ProjectSection(SolutionItems) = preProject
 		anteckningar.txt = anteckningar.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dubbelknapparna", "Dubbelknapparna\Dubbelknapparna.csproj", "{A3579C4D-B5E8-4B4D-92C9-ECFCD609720F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dubbelknapparna", "Dubbelknapparna\Dubbelknapparna.csproj", "{A3579C4D-B5E8-4B4D-92C9-ECFCD609720F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FL2", "FL2\FL2.csproj", "{15BC79A3-84F8-4101-8B7D-FE2F201D06EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kalkylatorn", "Kalkylatorn\Kalkylatorn.csproj", "{F5DF14FC-F8E2-41E9-A0AC-C2D2D2AF982D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +30,14 @@ Global
 		{A3579C4D-B5E8-4B4D-92C9-ECFCD609720F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3579C4D-B5E8-4B4D-92C9-ECFCD609720F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3579C4D-B5E8-4B4D-92C9-ECFCD609720F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15BC79A3-84F8-4101-8B7D-FE2F201D06EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15BC79A3-84F8-4101-8B7D-FE2F201D06EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15BC79A3-84F8-4101-8B7D-FE2F201D06EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15BC79A3-84F8-4101-8B7D-FE2F201D06EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5DF14FC-F8E2-41E9-A0AC-C2D2D2AF982D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5DF14FC-F8E2-41E9-A0AC-C2D2D2AF982D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5DF14FC-F8E2-41E9-A0AC-C2D2D2AF982D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5DF14FC-F8E2-41E9-A0AC-C2D2D2AF982D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

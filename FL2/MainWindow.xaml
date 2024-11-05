@@ -1,0 +1,14 @@
+﻿<Window x:Class="FL2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FL2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Name="btnOk" Content="Beräkna ålder" Margin="105,105,520,237" Height="92" Width="175" Background="#FFEF3030" Click="btnOk_Click" />
+        <TextBox FontSize="22" Text="0" x:Name="txtAge" HorizontalAlignment="Left" Margin="105,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="560" Height="37"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="105,28,0,0" TextWrapping="Wrap" Text="Ange födelseår" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

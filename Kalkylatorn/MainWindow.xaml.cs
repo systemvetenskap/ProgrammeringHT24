@@ -9,7 +9,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Dubbelknapparna
+namespace Kalkylatorn
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -21,18 +21,5 @@ namespace Dubbelknapparna
             InitializeComponent();
         }
 
-        private void btnFirst_Click(object sender, RoutedEventArgs e)
-        {
-            // första knappen
-            btnSecond.Content = "Oklickad";
-            btnFirst.Content = "Klickad";
-        }
-
-        private void btnSecond_Click(object sender, RoutedEventArgs e)
-        {
-            btnSecond.Content = "Klickad";
-            btnFirst.Content = "Oklickad";
-        }
-       
     }
 }
