@@ -34,7 +34,7 @@ namespace YatzyGame
             diceThree = 2;
             diceFour = 3;
             diceFive = 4;
-            
+
             // summer tärningarna
             // total 
             // och alla ettor
