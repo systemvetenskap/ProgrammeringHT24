@@ -7,13 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="txtValue" HorizontalAlignment="Left" Margin="135,166,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="171" Height="51"/>
+        <TextBox x:Name="txtResult" HorizontalAlignment="Left" Margin="135,166,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="171" Height="51"/>
         <TextBox x:Name="txtFirstValue" HorizontalAlignment="Left" Height="43" Margin="135,53,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="68" />
         <TextBox x:Name="txtSecondValue" HorizontalAlignment="Left" Height="43" Margin="286,53,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="61"/>
-        <Button x:Name="btnAdd" Content="+" HorizontalAlignment="Left" Margin="146,117,0,0" VerticalAlignment="Top" Height="44" Width="35"/>
-        <Button x:Name="btnSubtract" Content="-" HorizontalAlignment="Left" Margin="316,117,0,0" VerticalAlignment="Top" Height="44" Width="41"/>
-        <Button x:Name="button_Copy2" Content="*" HorizontalAlignment="Left" Margin="266,117,0,0" VerticalAlignment="Top" Height="44" Width="31"/>
-        <Button x:Name="button_Copy3" Content="/" HorizontalAlignment="Left" Margin="201,117,0,0" VerticalAlignment="Top" Height="44" RenderTransformOrigin="2.135,0.444" Width="35"/>
+        <Button x:Name="btnAdd" Content="+" HorizontalAlignment="Left" Margin="146,117,0,0" VerticalAlignment="Top" Height="44" Width="35" Click="OnButtonAdd"/>
+        <Button x:Name="btnSubtract" Content="-" HorizontalAlignment="Left" Margin="316,117,0,0" VerticalAlignment="Top" Height="44" Width="41" Click="btnSubtract_Click"/>
+        <Button x:Name="btnMultiply" Content="*" HorizontalAlignment="Left" Margin="266,117,0,0" VerticalAlignment="Top" Height="44" Width="31"/>
+        <Button x:Name="btnDivision" Content="/" HorizontalAlignment="Left" Margin="201,117,0,0" VerticalAlignment="Top" Height="44" RenderTransformOrigin="2.135,0.444" Width="35" Click="OnButtonDivision"/>
 
     </Grid>
 </Window>

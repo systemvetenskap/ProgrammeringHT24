@@ -30,6 +30,16 @@ int = ingeter = heltal
 När jag namnger en variabel spelar stora och små tecken roll
 Det är case sensitive
 
+om du vill byta namn. Använd Rename --> refactor
+
+******** VARIABLERS RÄCKVIDD
+En variabel har en scope, eller räckvidd.
+
+Det är samma sak om att den finns och lever i sitt kodblock { }
+
+Det går att öka räckvidden för en variabel genom att 
+flytta ut den från den lilla lådan till en större överliggande låda {}
+
 *** Konvertering mellan datatyper
 Jag kan byta en datatyp om jag vill för att bättre matcha en "mottagare"
 
@@ -45,3 +55,7 @@ Ett kodblock kan liknas vid en låda som innehåller kod som hänger ihop med varan
 F5 = starta programmet
 F10 = stega fram efter en breakpoint
 F7 = hoppa in i code behind
+
+**** Konstruktorn för objekt
+Varje gång ett objekt skapas så körs en metod en och endast en gång
+som heter konstruktor
