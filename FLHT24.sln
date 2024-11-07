@@ -16,7 +16,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FL2", "FL2\FL2.csproj", "{1
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kalkylatorn", "Kalkylatorn\Kalkylatorn.csproj", "{F5DF14FC-F8E2-41E9-A0AC-C2D2D2AF982D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YatzyGame", "YatzyGame\YatzyGame.csproj", "{7F412E86-8FE5-430B-9613-8CB6DE639202}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YatzyGame", "YatzyGame\YatzyGame.csproj", "{7F412E86-8FE5-430B-9613-8CB6DE639202}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FL4_StyrandeSatser", "FL4_StyrandeSatser\FL4_StyrandeSatser.csproj", "{68E4F56F-D2E6-4BC1-86CF-D06D7B38CA46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +46,10 @@ Global
 		{7F412E86-8FE5-430B-9613-8CB6DE639202}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F412E86-8FE5-430B-9613-8CB6DE639202}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F412E86-8FE5-430B-9613-8CB6DE639202}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68E4F56F-D2E6-4BC1-86CF-D06D7B38CA46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68E4F56F-D2E6-4BC1-86CF-D06D7B38CA46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68E4F56F-D2E6-4BC1-86CF-D06D7B38CA46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68E4F56F-D2E6-4BC1-86CF-D06D7B38CA46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

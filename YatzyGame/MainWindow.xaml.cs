@@ -23,7 +23,40 @@ namespace YatzyGame
 
         private void OnButtonOk(object sender, RoutedEventArgs e)
         {
-            int diceOne, diceTwo, diceThree, diceFour, diceFive;
+            int diceOne = 0, diceTwo = 0, diceThree = 0, diceFour = 0, diceFive = 0, total = 0;
+
+            // kategorier
+            int categoryOnes = 0, categoryTwos = 0, categoryThrees = 0, categoryFours = 0, categoryFives = 0, categorySixes = 0;
+
+
+            categoryOnes = int.Parse(txtOnes.Text);
+
+
+            total = categoryOnes + categoryTwos + categoryThrees + categoryFours + categoryFives + categorySixes;
+
+            // får spelaren bonus??
+            if (total >= 63) // allt inom parentesen måste kunna svara på formen ja eller nej
+            {
+                // det som ligger inom kodblocket körs BARA när villkoret valideras som sant
+                total += 50; //--> total = total + 50;
+                txtBonus.Text = "50";
+            }
+            else
+            {
+                // det här kodblocket körs bara när villkoret INTE är uppfyllt
+                txtBonus.Text = "X";
+            }
+            // presentera resultatet
+            txtTotal.Text = total.ToString();
+
+
+
+
+
+
+
+
+
 
             // Det här ska vi fixa längre fram i våra föreläsningar
             // få till en sätt att kasta våra tärningar och de dem värden
@@ -42,5 +75,7 @@ namespace YatzyGame
             // när vi har kastat tärningarna, vill vi att användare
             // ska kunna mata in värdet hen fick vid kastet i rätt ruta
         }
+
+       
     }
 }

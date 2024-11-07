@@ -59,3 +59,21 @@ F7 = hoppa in i code behind
 **** Konstruktorn för objekt
 Varje gång ett objekt skapas så körs en metod en och endast en gång
 som heter konstruktor
+
+
+********* STYRANDE SATSER
+i ett program vill man många gånger styra koden i olika riktningar.
+
+Om A är sant gör sak B, annars gör sak C
+
+detta är en if-sats
+
+if- else
+
+Använd jämförelseoperatorer
+== använder du för att jämföra om två saker är lika
+
+https://www.w3schools.com/cs/cs_operators_comparison.php
+
+Vi kan använda logiska operatorer
+https://www.w3schools.com/cs/cs_operators_logical.php
