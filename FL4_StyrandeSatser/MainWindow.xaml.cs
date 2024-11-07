@@ -31,7 +31,7 @@ namespace FL4_StyrandeSatser
             bool hasCorrectSpeed = false;
             // "Erik" == "Erik"
             // false == false
-            int total = 3, speed=135, currentSpeedLimit = 90;
+            int total = 3, speed=95, currentSpeedLimit = 90;
 
             if (total != 63)
             {
@@ -67,7 +67,12 @@ namespace FL4_StyrandeSatser
                 // du får böter men får jag köra vidare?
                 if (loseLicence)
                 {
+                    // du får böter och blir av med körkortet
                     return;
+                }
+                else
+                {
+                    // du får böter, men får köra vidare
                 }
             }
             // !false
