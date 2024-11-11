@@ -23,7 +23,7 @@ Null är samma sak om vakuum.
 En variabel kan under hela tiden programmet körs få nya värden. 
 Då försvinner det gamla
 
-Enkla datatyper = en typ som bara kan innehåll ett värde av en och samma typ
+Enkla datatyper = en typ som bara kan innehålla ett värde av en och samma typ
 string = strängar = en sammanhållen kedja av bokstäver
 int = ingeter = heltal
 
@@ -31,6 +31,9 @@ När jag namnger en variabel spelar stora och små tecken roll
 Det är case sensitive
 
 om du vill byta namn. Använd Rename --> refactor
+
+*** Arrayer
+Det är en variabel som kan innhålla flera värden. MEN fortfarande av samma typ
 
 ******** VARIABLERS RÄCKVIDD
 En variabel har en scope, eller räckvidd.
