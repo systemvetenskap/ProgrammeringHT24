@@ -140,6 +140,10 @@ namespace YatzyGame
 
         private void btnFives_Click(object sender, RoutedEventArgs e)
         {
+            double test = 0;
+
+
+            test = 23;
             // här vill vi satsa på våra femmor
 
             // skapa om möjligt dina variabler lokalt
