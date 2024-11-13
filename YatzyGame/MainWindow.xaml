@@ -112,12 +112,13 @@
             TextAlignment="Right"
             TextWrapping="Wrap" />
 
-        <Label
-            x:Name="captionFives"
+        <Button
+            x:Name="btnFives"
             Grid.Row="4"
             Grid.Column="0"
             HorizontalAlignment="Right"
             VerticalAlignment="Top"
+            Click="btnFives_Click"
             Content="Femmor"
             Foreground="#FFFF4E96" />
         <TextBox
@@ -132,13 +133,17 @@
             TextAlignment="Right"
             TextWrapping="Wrap" />
 
-        <Label
-            x:Name="captionSixes"
+        <Button
+            x:Name="btnSixes"
             Grid.Row="5"
             Grid.Column="0"
             HorizontalAlignment="Right"
             VerticalAlignment="Top"
+            Background="Transparent"
+            Click="btnSixes_Click"
+            BorderThickness="0"
             Content="Sexor"
+            Cursor="Hand"
             Foreground="#FFFF4E96" />
         <TextBox
             x:Name="txtSixes"
