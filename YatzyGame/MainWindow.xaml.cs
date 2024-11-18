@@ -22,6 +22,13 @@ namespace YatzyGame
         private void OnButtonOk(object sender, RoutedEventArgs e)
         {
 
+            bool[] savedDices = GetSavedDices();
+
+            GameEngine.RollDices(savedDices);
+            int max = GameEngine.GetMaxValue();
+            bool[] highest = GameEngine.GetMaxValues();
+            // använd gränsnittet med kryssrutorna för att markera högsta
+
             // kategorier
             int categoryOnes = 0, categoryTwos = 0, categoryThrees = 0, categoryFours = 0, categoryFives = 0, categorySixes = 0;
 
@@ -86,57 +93,51 @@ namespace YatzyGame
 
         private void btnRollDice_Click(object sender, RoutedEventArgs e)
         {
-            // _dices = new int[5];
-            // här kastar vi alltid alla tärningar
-            //for (int i = 0; i < _dices.Length; i++)
-            //{
-            //    _dices[i] = _random.Next(1, 7);
-            //}
+            // vi tilldelar en variabel värdet  från vår metod
 
-            // vi vill kunna spara tärningar
-            //bool rollDiceOne = chkDiceOne.IsChecked == true;
-
-            // Gör så Erik blir smart!
-            // varför inte skapa en array till!
-            // sparade tärningar:
-            //  0      1      2     3     4
-            // [true, false, true, true, true]
-            // [2,    5,      5,    5,     6]
-            bool[] savedDices = new bool[_dices.Length];
-            savedDices[0] = chkDiceOne.IsChecked == true;
-            savedDices[1] = chkDiceTwo.IsChecked == true;
-            savedDices[2] = chkDiceThree.IsChecked == true;
-            savedDices[3] = chkDiceFour.IsChecked == true;
-            savedDices[4] = chkDiceFive.IsChecked == true;
-
-
-            // Vi skulle kunna testa att göra en kontroll av en array till!
-            for (int i = 0; i < _dices.Length; i++)
-            {
-                bool diceIsNotSaved = savedDices[i] == false;
-                if (diceIsNotSaved)
-                {
-                    _dices[i] = _random.Next(1, 7);
-                }
-            }
-
-            lblDiceOne.Content = _dices[0].ToString();
-            lblDiceTwo.Content = _dices[1].ToString();
-            lblDiceThree.Content = _dices[2].ToString();
-            lblDiceFour.Content = _dices[3].ToString();
-            lblDiceFive.Content = _dices[4].ToString();
-
-            // hemläxa
-            // använd en for-loop för att summera värdena från alla tärningar
-            int total = 0;
-            for (int i = 0; i < _dices.Length; i++)
-            {
-                // total = total + dices[i]
-                total += _dices[i];
-            }
-
-
+            bool[] savedDices = GetSavedDices();
+            int[] dices = GameEngine.RollDices(savedDices);
+            DisplayDiceValues(dices);
+            DisplayDiceValues(dices);
+            DisplayDiceValues(dices);
+            DisplayDiceValues(dices);
+            DisplayDiceValues(dices);
+            DisplayDiceValues(dices);
+            DisplayDiceValues(dices);
+            DisplayDiceValues(dices);
         }
+
+        // Vi gör en metod som skriver ut värdet av våra tärningar.
+        // ger metoden en indataparameter = de tärningarna som ska visas
+        /// <summary>
+        /// Visar tärningarnas värde i våra labels
+        /// </summary>
+        private void DisplayDiceValues(int[] dicesToDisplay)
+        {
+            lblDiceOne.Content = dicesToDisplay[1].ToString();
+            lblDiceTwo.Content = dicesToDisplay[1].ToString();
+            lblDiceThree.Content = dicesToDisplay[2].ToString();
+            lblDiceFour.Content = dicesToDisplay[3].ToString();
+            lblDiceFive.Content = dicesToDisplay[4].ToString();
+        }
+
+        private bool[] GetSavedDices()
+        {
+            bool[] savedDices =
+            {
+                chkDiceOne.IsChecked == true,
+                chkDiceTwo.IsChecked == true,
+                chkDiceThree.IsChecked == true,
+                chkDiceFour.IsChecked == true,
+                chkDiceFive.IsChecked == true
+            };
+            return savedDices;
+        }
+
+
+
+
+
 
         private void btnFives_Click(object sender, RoutedEventArgs e)
         {

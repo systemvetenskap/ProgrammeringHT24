@@ -80,3 +80,33 @@ https://www.w3schools.com/cs/cs_operators_comparison.php
 
 Vi kan använda logiska operatorer
 https://www.w3schools.com/cs/cs_operators_logical.php
+
+**** METODER
+
+Det använder vi bland annat för att undvika att koden upprepas
+DRY don´t repeat yourself
+
+Varje gång du kopierar och klistrar in kod, tänk metod
+
+Metoder kan placeras på många olika ställen i vår kod.
+Frågan vi ofta ställer oss blir. Var är det bäst?
+
+Gäller metoden något som kan kallas affärslogik = de regler som gäller för
+verksamheten som ska ha appen
+
+De kan de metoderna läggas separat
+
+Men, gäller metoden något som styr gränssnittet (Ux). Då kan
+metoden istället behöva ligga i windowsklassen.
+
+SOC separation of concern
+
+I vårt exempel
+- En metod för att hämta vilka tärningar användaren har sparat
+- en metod för att kasta alla eller några tärningar
+- en metod för att visa tärningarnas värde i gränssnittet.
+
+En metod och en klass kan vara statisk. Se statiska klasser som resurser som
+aldrig existerar i olika varianter
+
+En metod MÅSTE returnera ett värde MEN värdet kan vara tomt = void
