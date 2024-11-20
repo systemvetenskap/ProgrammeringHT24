@@ -104,13 +104,13 @@ namespace YatzyGame
             bool[] savedDices = GetSavedDices();
             int[] dices = GameEngine.RollDices(savedDices);
             DisplayDiceValues(dices);
-            DisplayDiceValues(dices);
-            DisplayDiceValues(dices);
-            DisplayDiceValues(dices);
-            DisplayDiceValues(dices);
-            DisplayDiceValues(dices);
-            DisplayDiceValues(dices);
-            DisplayDiceValues(dices);
+            //DisplayDiceValues(dices);
+            //DisplayDiceValues(dices);
+            //DisplayDiceValues(dices);
+            //DisplayDiceValues(dices);
+            //DisplayDiceValues(dices);
+            //DisplayDiceValues(dices);
+            //DisplayDiceValues(dices);
         }
 
         // Vi gör en metod som skriver ut värdet av våra tärningar.
@@ -120,7 +120,7 @@ namespace YatzyGame
         /// </summary>
         private void DisplayDiceValues(int[] dicesToDisplay)
         {
-            lblDiceOne.Content = dicesToDisplay[1].ToString();
+            lblDiceOne.Content = dicesToDisplay[0].ToString();
             lblDiceTwo.Content = dicesToDisplay[1].ToString();
             lblDiceThree.Content = dicesToDisplay[2].ToString();
             lblDiceFour.Content = dicesToDisplay[3].ToString();
@@ -159,46 +159,10 @@ namespace YatzyGame
 
             txtFives.Text = score.ToString();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            // här vill vi satsa på våra femmor
-
-            // skapa om möjligt dina variabler lokalt
-            int scoreForCategory = 0;
-            // Hur gör vi för att samla på någon viss kategori?
-            for (int i = 0; i < _dices.Length; i++)
-            {
-                int diceValue = _dices[i];
-                // jag måste undersöka värdet
-                if (diceValue == 5)
-                {
-                    scoreForCategory += diceValue;
-                }
-            }
-            txtFives.Text = scoreForCategory.ToString();
-            // om det behövs, lägg variabeln i "stora lådan". Instansvariabel
-            _total += scoreForCategory;
+            // uppdaterar totalpoängen och skriver ut
+            _total += score;
             txtTotal.Text = _total.ToString();
+
         }
 
         private void btnSixes_Click(object sender, RoutedEventArgs e)
