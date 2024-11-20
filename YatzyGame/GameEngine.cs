@@ -21,6 +21,61 @@
         // Fundera. VAR lägger jag dessa metoder bäst?
         // hur gör jag metoderna
 
+        public static int CalculateScoreForCategoryFives()
+        {
+            // titta på varje tärning
+            // vi har ju fem stycken
+            // i en array
+
+            int score = 0;
+            foreach (int dice in _dices)
+            {
+                // är det en femma?
+                // en ja och nejfråga
+                if (dice == 5)
+                {
+                    // ja --> öka poäng
+                    score += 5;
+                }
+                // nej --> gör ingenting Hoppa över
+            }
+
+            //for (int i = 0; i < _dices.Length; i++)
+            //{
+            //    int dice = _dices[i];
+            //}
+            // berätta  vilken poäng användaren fick
+            return score;
+        }
+
+        public static int CalculateScoreForCategory(int selectedCategory)
+        {
+            // titta på varje tärning
+            // vi har ju fem stycken
+            // i en array
+
+            int score = 0;
+            foreach (int dice in _dices)
+            {
+                // är det en tärningen vi söker?
+                // en ja och nejfråga
+                if (dice == selectedCategory)
+                {
+                    // ja --> öka poäng
+                    score += selectedCategory;
+                }
+                // nej --> gör ingenting Hoppa över
+            }
+
+            //for (int i = 0; i < _dices.Length; i++)
+            //{
+            //    int dice = _dices[i];
+            //}
+            // berätta  vilken poäng användaren fick
+            return score;
+        }
+
+
         /// <summary>
         /// Kastar fem tärningar och får slumpmässiga värden mellan 1 och 6
         /// </summary>

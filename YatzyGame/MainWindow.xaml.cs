@@ -19,9 +19,15 @@ namespace YatzyGame
             InitializeComponent();
         }
 
-        private void OnButtonOk(object sender, RoutedEventArgs e)
+        private void OnButtonOkClick(object sender, RoutedEventArgs e)
         {
+            // heltal - int
+            // kommatal, flyttal - double
+            // true/false  - bool
+            // text - string
 
+            // om jag vill ha flera variabler av samma karaktär
+            // array -- []
             bool[] savedDices = GetSavedDices();
 
             GameEngine.RollDices(savedDices);
@@ -91,7 +97,7 @@ namespace YatzyGame
             // ska kunna mata in värdet hen fick vid kastet i rätt ruta
         }
 
-        private void btnRollDice_Click(object sender, RoutedEventArgs e)
+        private void OnRollDiceClick(object sender, RoutedEventArgs e)
         {
             // vi tilldelar en variabel värdet  från vår metod
 
@@ -141,6 +147,39 @@ namespace YatzyGame
 
         private void btnFives_Click(object sender, RoutedEventArgs e)
         {
+            // int score = GameEngine.CalculateScoreForCategoryFives();
+
+            // Vad händer här?
+
+            // metoden vid namn CalculateScoreForCategory tar emot vilken
+            // kategori användaren vill satsa på --> 5
+
+            // vad är score? Jo det är den summa som spelaren fick
+            int score = GameEngine.CalculateScoreForCategory(5);
+
+            txtFives.Text = score.ToString();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             // här vill vi satsa på våra femmor
 
