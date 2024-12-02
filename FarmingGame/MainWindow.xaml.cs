@@ -21,9 +21,18 @@ namespace FarmingGame
 
         private void OnButtonOkClick(object sender, RoutedEventArgs e)
         {
+            List<Hen> deadHens = _farm.SimulateDay();
+
+
+
             // Regel
             // alla hönor i vårt spel måste ha ett namn och en ålder när de skapas
-            Hen hen = new Hen("Agda", 2);
+            //Hen hen = new Hen("Agda", 2);
+            //string message = hen.Clucks("hej");
+            //string humanMessage = _farm.FarmerTranslates(message);
+
+            //hen.LayEgg();
+
         }
     }
 }

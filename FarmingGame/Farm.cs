@@ -43,5 +43,45 @@
             }
 
         }
+
+        public string FarmerTranslates(string message)
+        {
+            /* Jag  vill testa om strängen går att läsa baklänges
+             * det kan vi göra genom att låta en for-loop snurra baklänges
+             * kire
+             * [e][r]ik
+             * A bcdefg
+             */
+            int steps = 3;
+            string encrypted = StringHelper.Reverse(message);
+            string humanMessage = string.Empty;
+            foreach (char letter in encrypted)
+            {
+                humanMessage += (char)(letter - 3);
+            }
+            return humanMessage;
+        }
+
+
+        public List<Hen> SimulateDay()
+        {
+
+            List<Hen> deadHens = new List<Hen>();
+            foreach (Hen hen in Hens)
+            {
+                // om energin under dagen blir <0 så dör hönan
+
+                hen.Eat();
+                hen.LayEgg();
+                if (hen.Energy < 0)
+                {
+                    deadHens.Add(hen);
+                    continue;
+                }
+                hen.Eat();
+                hen.Sleep();
+            }
+            return deadHens;
+        }
     }
 }
