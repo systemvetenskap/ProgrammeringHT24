@@ -21,6 +21,19 @@ namespace FarmingGame
 
         private void OnButtonOkClick(object sender, RoutedEventArgs e)
         {
+            Chicken chicken = new Chicken()
+            {
+                Age = 12,
+                Name = "kackla",
+            };
+            chicken.Clucks("asdfaslkdf");
+            chicken.Eat();
+            _farm.AddNewBird(chicken);
+            List<Hen> hens = new List<Hen>();
+            Hen hen = new Hen("Stor-Johan", 3);
+
+            _farm.AddNewBird(hen);
+            hens.Add(hen);
             List<Hen> deadHens = _farm.SimulateDay();
 
 

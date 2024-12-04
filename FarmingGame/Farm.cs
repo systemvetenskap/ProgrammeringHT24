@@ -8,6 +8,7 @@
          * det är vår hönsgård
          * här skulle vi då kunna tänka oss att bonden matar sina djur
          */
+        private List<Bird> _birds = new List<Bird>();
         private List<string> _henNames = new List<string>
         {
             "Ada", "Beda", "Cilla", "Disa", "Elsa", "Fina", "Gullan", "Hulda",
@@ -20,9 +21,12 @@
             "Irma", "Julia", "Karin", "Linda", "Mona", "Nora", "Ottilia", "Polly"
         };
         public List<Hen> Hens { get; set; } = new List<Hen>();
+        public List<Chicken> Chickens { get; set; } = new List<Chicken>();
+        public List<Turkey> Turkeys { get; set; } = new List<Turkey>();
         // List<Person> people
         public Farm(int numberOfHens)
         {
+
             // Nu vet vi hur många höns bonden vill skaffa -- numberOfHens
             int nameIndex = 0;
             for (int i = 0; i < numberOfHens; i++)
@@ -62,10 +66,16 @@
             return humanMessage;
         }
 
+        public void AddNewBird(Bird bird)
+        {
+            // lägg den i en lista
+            _birds.Add(bird);
+        }
 
         public List<Hen> SimulateDay()
         {
-
+            // hämta alla döda höns
+            // alla hönor vars energi är under noll
             List<Hen> deadHens = new List<Hen>();
             foreach (Hen hen in Hens)
             {
@@ -81,7 +91,23 @@
                 hen.Eat();
                 hen.Sleep();
             }
+            /* här vill jag plocka bort de döda hönsen
+             * men eftersom vi är inuti vår loop med hönor
+             * kommer det kunna bli konstiga index
+             * skapar därför en egen metod
+             */
+            RemoveDeadHens(deadHens);
             return deadHens;
+        }
+        private void RemoveDeadHens(List<Hen> deadHens)
+        {
+            // här loopar vi inte vår Hens property
+            // utan vi kikar på våra döda hönor. Den listan
+            // blir då intakt
+            foreach (Hen deadHen in deadHens)
+            {
+                Hens.Remove(deadHen);
+            }
         }
     }
 }
